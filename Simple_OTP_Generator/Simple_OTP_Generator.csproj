@@ -2,10 +2,21 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Description>Class library that provides simple functionality to generate 6 digit code 
+against the secret key provided in arguments.</Description>
+    <Copyright>Copyright © 2019 Umair Qayyum</Copyright>
+    <PackageProjectUrl>https://github.com/uqayyum/simple_otp_generator/blob/master/Simple_OTP_Generator/Simple_OTP_Generator.csproj</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/uqayyum/simple_otp_generator</RepositoryUrl>
+    <RepositoryType>public</RepositoryType>
+    <PackageTags>dotnet OTP library</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Otp.NET" Version="1.2.1" />
+    <None Include="LICENSE.txt" Pack="true" PackagePath="LICENSE.txt" />
   </ItemGroup>
 
 </Project>
